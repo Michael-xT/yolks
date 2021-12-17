@@ -11,6 +11,7 @@ on:
 jobs:
   push:
     name: "yolks:nginx_${{ matrix.tag }}"
+    runs-on: buildpack-deps:stretch
     strategy:
       fail-fast: false
       matrix:
