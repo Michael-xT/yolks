@@ -55,7 +55,5 @@ USER        container
 ENV         USER=container HOME=/home/container
 WORKDIR     /home/container
 
-COPY		nginx.conf /etc/nginx/nginx.conf
-
 COPY        ./../entrypoint.sh /entrypoint.sh
 CMD         ["/bin/bash", "/entrypoint.sh"]
