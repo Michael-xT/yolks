@@ -2,7 +2,7 @@ FROM        ubuntu:latest
 
 LABEL       author="Mike" maintainer="mike"
 
-RUN         apt-get update && apt-get upgrade && apt-get install -y libc-bin libatomic1 wget jq curl 
+RUN         apt-get update && apt-get install -y libc-bin libatomic1 wget jq curl 
 
 RUN         useradd -m -d /home/container container
 
